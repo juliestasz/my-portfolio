@@ -2,6 +2,7 @@
   --branding-color: #e9ecef;
   --secondary-color: #343a40;
   --button-color: #212529;
+  --additional-color: #edf2f4;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
@@ -12,7 +13,6 @@ body {
 
 h1,
 h2,
-h4,
 h5,
 h6 {
   color: white;
@@ -34,6 +34,11 @@ h3 {
   color: black;
   font-family: var(--heading-font-family);
   font-weight: bold;
+}
+
+h4 {
+  font-size: 40px;
+  font-family: var(--heading-font-family);
 }
 
 p {
@@ -170,6 +175,41 @@ nav a {
 nav a:hover,
 nav li a.active {
   color: var(--button-color);
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+footer .email-link:hover {
+  color: var(--secondary-color);
+}
+
+footer .contact-box {
+  background-color: var(--additional-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+
+footer .contact-box p {
+  margin: 0;
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: (var(--secondary-color));
+  background-color: var(--additional-color);
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: white;
+  background-color: var(--secondary-color);
 }
 
 @media (max-width: 960px) {
