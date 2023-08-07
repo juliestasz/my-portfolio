@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta
+      class="description"
+      content="Julia has been learning to code since June 2023 aspiring to become a software negineer to build game-changing projects"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -30,6 +33,23 @@
     <title>About Julia</title>
   </head>
   <body>
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <a href="/">
+          <img src="src/elephant-logo.png" class="logo" alt="my-logo"
+        /></a>
+        <ul>
+          <li>
+            <a href="/" title="homepage">Home</a>
+          </li>
+          <li class="active">
+            <a href="/about.html" title="about-me">About</a>
+          </li>
+          <li><a href="/work.html" title="my-projects">Projects</a></li>
+          <li><a href="/contact.html" title="contact-me">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
     <div class="content-container container">
       <div class="row">
         <div class="col-lg-6">
@@ -42,13 +62,44 @@
               desktop publishing software like Aldus PageMaker including
               versions of Lorem Ipsum.
             </p>
-            <a href="#" class="btn btn-branding"> Check out my work</a>
+            <a href="/work.html" class="btn btn-branding"> Check out my work</a>
           </div>
         </div>
         <div class="col-6 d-none d-lg-block">
           <img src="src/me-photo.jpg" alt="" class="img-fluid rounded" />
         </div>
       </div>
+      <footer>
+        <div
+          class="contact-box d-flex justify-content-between mb-5 d-none d-md-flex"
+        >
+          <div>
+            <h4>Work inquiry</h4>
+            <p class="text-muted">Let's work together</p>
+          </div>
+          <div>
+            <a href="" class="btn btn-branding mt-3">Contact me</a>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mb-5">
+          <a
+            href="mailto:juliestaszczak@gmail.com"
+            class="email-link"
+            title="Email"
+            >juliestaszczak@gmail.com</a
+          >
+        </div>
+        <div class="social-links d-flex justify-content-center mb-5">
+          <a
+            href="https://www.linkedin.com/in/julia-staszczak-282709179/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin" title="LinkedIn"></i
+          ></a>
+          <a href="https://github.com/juliestasz" target="_blank">
+            <i class="fa-brands fa-github" title="Github"></i
+          ></a>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
